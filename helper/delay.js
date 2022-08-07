@@ -5,7 +5,7 @@ function delay(time) {
 }
 
 async function sortDone(){
-  for(let j=1;j<size;j++){
+  for(let j=start;j<end;j++){
     let div1 = container.querySelector(`[data-id${arr[j-1].index}='${arr[j-1].id}']`)
     let div2 = container.querySelector(`[data-id${arr[j].index}='${arr[j].id}']`);
     await delay(2)
@@ -23,7 +23,7 @@ async function sortDone(){
 
 
 async function white(){
-    for(let i=0;i<size;i++){
+    for(let i=start;i<end;i++){
      let div = container.querySelector(`[data-id${arr[i].index}='${arr[i].id}']`)
      div.classList.remove("greenC")
       await delay(15)

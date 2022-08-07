@@ -1,5 +1,5 @@
 // time
-let time = 5
+let time = 20
 let size = 100;
 let old = [];
 for(let i=0;i<size;i++){

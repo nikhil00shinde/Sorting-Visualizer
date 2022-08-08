@@ -23,6 +23,12 @@ function swap(div1,div2,i,j){
    arr[j] = k
 }
 
-function check(div3,arr2){
+function colorAdd(div1,div2){
+  div1.classList.add("redC")
+  div2.classList.add("redC");
+}
 
+function colorRemove(div1,div2){
+  div1.classList.remove("redC")
+  div2.classList.remove("redC");
 }

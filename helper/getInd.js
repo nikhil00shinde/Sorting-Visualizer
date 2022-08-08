@@ -1,10 +1,14 @@
 // time
 let time = 20
-let size = 100;
+let size = 400;
 let old = [];
-for(let i=0;i<size;i++){
+const map = new Map();
+for(let i=0;i<size;){
   let a = Math.floor(Math.random() * (722 - 20)) + 20;
-  old.push(a)
+  if(!map.has(a)){
+    old.push(a);
+    i++;
+  }
 }
 let arr = []
 

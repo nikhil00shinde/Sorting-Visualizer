@@ -1,6 +1,6 @@
 // time
 let time = 20
-let size = 400;
+let size = 100;
 let old = [];
 const map = new Map();
 for(let i=0;i<size;){

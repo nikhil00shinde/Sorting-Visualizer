@@ -34,8 +34,3 @@ async function selection(){
   }
 }
 
-(async () =>{
-  await selection();
-  await sortDone();
-  await white();
-  })()

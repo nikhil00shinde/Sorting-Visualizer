@@ -13,10 +13,5 @@ async function bubble(){
     }
   }
 
-(async () =>{
-await bubble();
-await sortDone();
-await white();
-})()
 
 

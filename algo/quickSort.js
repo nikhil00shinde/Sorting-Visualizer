@@ -53,14 +53,6 @@ async function quickSort(arr,start,end){
   }
 }
 
-let start = 0;
-let end = size - 1;
-(
-  async ()=>{
-    await quickSort(arr,start,end);
-    await sortDone()
-    await white()
-  } 
-    
-)()
-console.log(arr)
+ start = 0;
+ end = size - 1;
+

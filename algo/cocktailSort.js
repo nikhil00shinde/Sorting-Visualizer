@@ -49,13 +49,3 @@ async function cockTailSort(){
 }
 
 
-(
-async function(){
-
-  await cockTailSort();
-    await sortDone()
-    await white()
-}
-
-)()
-console.log(arr)

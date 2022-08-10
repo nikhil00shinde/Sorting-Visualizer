@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sorting Visualizer</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400;700;900&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&family=Readex+Pro:wght@200;300;400;500;700&family=Roboto:wght@400;500&display=swap');
     </style>
@@ -20,19 +20,26 @@
     <div class="info-algo">
       <h3 class="algo bubble">Bubble Sort</h3>
 
-      <h3 class="algo">Selection Sort</h3>
+      <h3 class="algo selection">Selection Sort</h3>
 
-      <h3 class="algo">Insertion Sort</h3>
+      <h3 class="algo insertion">Insertion Sort</h3>
 
-      <h3 class="algo">Cocktail Sort</h3>
+      <h3 class="algo cocktail">Cocktail Sort</h3>
 
-      <h3 class="algo">Merge Sort</h3>
+      <h3 class="algo merge">Merge Sort</h3>
 
-      <h3 class="algo">Quick Sort</h3>
+      <h3 class="algo quick">Quick Sort</h3>
     </div>
     <br/>
     <div class="size-speed">
-
+      <p>
+       <label for="time">Time</label>
+        <input type="range" id="time" name="time" min="1" max="1000" >
+      </p>
+      <p>
+        <label for="size">Size</label>
+         <input type="range" id="size" name="size" min="100" max="300" >
+       </p>
     </div>
   </div>
   <script type="text/javascript"
@@ -45,7 +52,25 @@
   src="./helper/swap.js"
   ></script>
   <script type="text/javascript"
+  src="./algo/bubble.js"
+  ></script>
+  <script type="text/javascript"
   src="./algo/cocktailSort.js"
+  ></script>
+  <script type="text/javascript"
+  src="./algo/insertion.js"
+  ></script>
+  <script type="text/javascript"
+  src="./algo/mergeSort.js"
+  ></script>
+  <script type="text/javascript"
+  src="./algo/quickSort.js"
+  ></script>
+  <script type="text/javascript"
+  src="./algo/selection.js"
+  ></script>
+  <script type="text/javascript"
+  src="./helper/end.js"
   ></script>
 </body>
 </html>

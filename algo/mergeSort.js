@@ -105,14 +105,7 @@ async function mergeSort(arr,start,end){
 
 let start =0;
 let end = size - 1;
-(
-  async ()=>{
-     await mergeSort(arr,start,end);
 
-     
-   
-  }
-)()
 
 
 async function firstLoop(i,k,start,arr1){

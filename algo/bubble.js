@@ -10,6 +10,8 @@ async function bubble(){
            swapBubble(div1,div2,i,j);
           }
       }
+      if(resetBtn)
+      throw Error("newm")
     }
   }
 

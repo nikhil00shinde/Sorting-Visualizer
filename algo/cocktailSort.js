@@ -42,7 +42,6 @@ async function cockTailSort(){
        
     }
     start++;
-  
 
   }
 

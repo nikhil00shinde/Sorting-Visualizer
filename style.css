@@ -70,16 +70,15 @@ body{
   transition: 300ms;
 }
 .algo:hover:after {
-  transform: scale(1);
+  transform: scale(0.8);
   width: 100%;
 }
 .algo:hover{
   transform: scale(1);
 }
 .size-speed{
-  height: 12rem;
+
     width: 100%;
-    border: 1px solid red;
 }
 
 
@@ -96,3 +95,30 @@ body{
 .blueC{
   background-color: blue;
 }
+
+.size-speed{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.resetAll {
+ margin: 1rem;
+}
+
+.resetAll button{
+  height: 2rem;
+  width: 5rem;
+  font-size: 1rem;
+  background-color: wheat;
+  border: 0;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+ .size-speed{
+   flex-direction: column;
+ }
+}
+

@@ -3,9 +3,8 @@ async function insertion(){
      for(let i=1;i<size;i++){
      
        let ind = i;
-      
-
-
+       if(resetBtn)
+      throw Error("newm")
        for(let j=i-1;j>=0;j--){
         await delay(50);
         let div1 = container.querySelector(`[data-id${arr[ind].index}='${arr[ind].id}']`);
@@ -29,6 +28,8 @@ async function insertion(){
             ind = j
           }
        } 
+       if(resetBtn)
+       throw Error("newm")
      }
 }
 

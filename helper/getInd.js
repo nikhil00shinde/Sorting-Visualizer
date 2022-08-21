@@ -12,7 +12,16 @@ let timeRange = document.querySelector("#time");
 timeRange.addEventListener("change",(e)=>{
  time = e.target.value;
 })
-
+let reset = document.querySelectorAll("button");
+let resetBtn = false;
+reset[0].addEventListener("click",()=>{
+  let container = document.querySelector(".container");
+  container.innerHTML = "";
+  createStick();
+})
+reset[1].addEventListener("click",(e)=>{
+  resetBtn = true;
+});  
 // size
 let arrRange = document.querySelector("#size");
 arrRange.addEventListener("change",(e)=>{

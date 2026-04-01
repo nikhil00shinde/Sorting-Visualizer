@@ -10,7 +10,6 @@ async function insertion(){
         let div1 = container.querySelector(`[data-id${arr[ind].index}='${arr[ind].id}']`);
         div1.classList.add("greenC");
         let div2 = container.querySelector(`[data-id${arr[j].index}='${arr[j].id}']`);
-        console.log(div2)
         await delay(40)
         div2.classList.add("redC");
         await delay(40);

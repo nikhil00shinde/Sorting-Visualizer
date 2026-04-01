@@ -1,9 +1,3 @@
-function swap2(i,j){
-  let temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp; 
-}
-
 async function partition(arr,start,end){
   let i = start;
   let j = start -1;
@@ -53,6 +47,6 @@ async function quickSort(arr,start,end){
   }
 }
 
- start = 0;
- end = size - 1;
+var start = 0;
+var end = size - 1;
 

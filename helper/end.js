@@ -2,7 +2,6 @@ let allAlgoDiv = document.querySelectorAll(".algo");
 
 for(let i=0;i<allAlgoDiv.length;i++){
   allAlgoDiv[i].addEventListener("click",function(e){
-    console.log(run)
     if(i == 0 && run){
       (async () =>{
         try {
@@ -12,21 +11,23 @@ for(let i=0;i<allAlgoDiv.length;i++){
         await white();
         await runF();
         } catch (error) {
+            resetBtn = false
             run = true
         }
-        
+
         })()
     }else if(i == 1 && run){
       (async () =>{
         try{
 
           run = false
-         
+
           await selection();
           await sortDone();
           await white();
           await runF();
         } catch (error) {
+          resetBtn = false
           run = true
         }
         })()
@@ -40,6 +41,7 @@ for(let i=0;i<allAlgoDiv.length;i++){
           await white()
           await runF();
           } catch (error) {
+            resetBtn = false
             run = true
         }
         }
@@ -54,6 +56,7 @@ for(let i=0;i<allAlgoDiv.length;i++){
               await white()
               await runF();
           } catch (error) {
+            resetBtn = false
             run = true
         }
         }
@@ -66,6 +69,7 @@ for(let i=0;i<allAlgoDiv.length;i++){
            await mergeSort(arr,start,end);
            await runF();
           } catch (error) {
+            resetBtn = false
             run = true
         }
         }
@@ -80,12 +84,13 @@ for(let i=0;i<allAlgoDiv.length;i++){
             await white()
             await runF();
           } catch (error) {
+            resetBtn = false
             run = true
         }
-        }  
+        }
       )()
     }
-   
+
   })
 }
 

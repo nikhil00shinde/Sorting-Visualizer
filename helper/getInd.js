@@ -2,7 +2,6 @@
 let time = 2;
 let size = 100;
 let old = [];
-const map = new Map();
 let arr = [];
 let run = true;
 
@@ -36,7 +35,7 @@ function createStick(){
   old = []
   for(let i=0;i<size;){
     let a = Math.floor(Math.random() * (722 - 20)) + 20;
-    if(!map.has(a)){
+    if(!old.includes(a)){
       old.push(a);
       i++;
     }
@@ -50,6 +49,9 @@ function createStick(){
     let index = getIndexes(newArr,num);
     div.setAttribute("data-id"+index,num)
     div.style.height = num+"px"
+    div.style.setProperty("--i", i)
+    div.classList.add("bar-entering")
+    div.addEventListener("animationend", () => div.classList.remove("bar-entering"), { once: true })
     container.append(div)
     let obj = {
       id:num,

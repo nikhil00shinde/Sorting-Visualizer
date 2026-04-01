@@ -103,9 +103,6 @@ async function mergeSort(arr,start,end){
   await delay(time)
 }
 
-let start =0;
-let end = size - 1;
-
 
 
 async function firstLoop(i,k,start,arr1){

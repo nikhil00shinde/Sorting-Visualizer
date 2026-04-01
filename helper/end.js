@@ -66,7 +66,7 @@ for(let i=0;i<allAlgoDiv.length;i++){
         async ()=>{
           try{
           run = false
-           await mergeSort(arr,start,end);
+           await mergeSort(arr,0,size-1);
            await runF();
           } catch (error) {
             resetBtn = false
@@ -79,7 +79,7 @@ for(let i=0;i<allAlgoDiv.length;i++){
         async ()=>{
           try{
             run = false
-            await quickSort(arr,start,end);
+            await quickSort(arr,0,size-1);
             await sortDone()
             await white()
             await runF();

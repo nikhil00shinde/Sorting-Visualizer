@@ -8,26 +8,28 @@ let run = true;
 let container = document.querySelector(".container");
 // time
 let timeRange = document.querySelector("#time");
-timeRange.addEventListener("change",(e)=>{
- time = e.target.value;
+timeRange.addEventListener("input",(e)=>{
+  time = Number(e.target.value);
 })
 let reset = document.querySelectorAll("button");
 let resetBtn = false;
 reset[0].addEventListener("click",()=>{
+  resetBtn = true;
   let container = document.querySelector(".container");
   container.innerHTML = "";
   createStick();
+  if(run) resetBtn = false; // no sort was running, clear the flag
 })
 reset[1].addEventListener("click",(e)=>{
   resetBtn = true;
-});  
+});
 // size
 let arrRange = document.querySelector("#size");
-arrRange.addEventListener("change",(e)=>{
- size = e.target.value;
- let container = document.querySelector(".container");
- container.innerHTML = "";
- createStick();
+arrRange.addEventListener("input",(e)=>{
+  size = Number(e.target.value);
+  let container = document.querySelector(".container");
+  container.innerHTML = "";
+  createStick();
 })
 
 

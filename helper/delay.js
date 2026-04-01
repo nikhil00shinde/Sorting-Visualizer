@@ -1,6 +1,9 @@
-function delay(time) {
+function delay(ms) {
   return new Promise((resolve, reject) => {
-          setTimeout(resolve, time);
+    setTimeout(() => {
+      if (resetBtn) reject(new Error("stopped"));
+      else resolve();
+    }, ms);
   });
 }
 
